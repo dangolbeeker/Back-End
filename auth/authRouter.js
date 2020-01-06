@@ -58,7 +58,7 @@ function getJwtToken(username) {
   const payload = {
     username
   };
-  const secret = process.env.JWT_SECRET || "willy wonka";
+  const secret = process.env.JWT_SECRET || "secret";
   const options = {
     expiresIn: "1d"
   };
