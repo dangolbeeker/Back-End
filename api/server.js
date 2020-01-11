@@ -1,6 +1,8 @@
 const express = require("express");
 const configureMiddleware = require("./configurationMiddleware.js");
 const restrictedAuth = require("../auth/restrictedAuthMiddleware.js");
+const graphqlController = require('./controller/graphqlController');
+
 
 const usersRouter = require("../users/usersRouter.js");
 const propertyRouter = require("../property/propertyRouter.js");
